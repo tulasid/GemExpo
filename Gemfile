@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.4'
 
 # Use mysql2 as the database for Active Record
-gem 'mysql2'
+#gem 'mysql2'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -21,6 +21,8 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+gem'pg'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -30,3 +32,5 @@ group :test do
 # Use rspec for testing
   gem 'rspec', '~> 2.14.1'
 end
+
+gem 'rails_12factor', group: :production
