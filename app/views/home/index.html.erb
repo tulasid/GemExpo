@@ -1,0 +1,31 @@
+<% @page_title = "Index" %>
+<div id="g-row1">
+	<p>Learn, get exposure and know the functionality of various gems of Ruby on Rails.</p>
+	<%= image_tag('rails.jpg', :alt => 'Ruby On Rails')%>
+</div>
+<div class="g-row2">
+	<div class="g-col">
+		<h3><%= image_tag('rubyl.png', :alt => '*')%>SIMPLE FORM</h3>
+		<p class="def">Simple Form aims to be as flexible as possible while helping you with powerful components to create your forms.</p>
+		<div class="lnk">
+			<%= link_to("More Info", "https://github.com/plataformatec/simple_form", :target => "_blank") %>
+			<%= link_to("Functionality", {:controller => 'login_pages', :action => 'index'}) %>
+		</div>
+	</div>
+	<div class="g-col">
+		<h3><%= image_tag('rubyl.png', :alt => '*')%>DEVISE</h3>
+		<p class="def">Devise is a flexible authentication solution for Rails based on Warden.</p>
+		<div class="lnk">
+			<%= link_to("More Info", "https://github.com/plataformatec/devise", :target => "_blank") %>
+			<%= link_to("Functionality") %>
+		</div>
+	</div>
+	<div class="g-col">
+		<h3><%= image_tag('rubyl.png', :alt => '*')%>BOWER</h3>
+		<p class="def">Bower is a package manager for the web. It offers a generic, unopinionated solution to the problem of front-end package management.</p>
+		<div class="lnk">
+			<%= link_to("More Info", "https://github.com/bower/bower", :target => "_blank") %>
+			<%= link_to("Functionality") %>
+		</div>
+	</div>
+</div>

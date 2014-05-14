@@ -3,9 +3,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
 
-# Use mysql2 as the database for Active Record
-gem 'mysql2'
-
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
@@ -26,7 +23,17 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :development, :test do
+  # Use mysql2 as the database for Active Record
+  gem 'mysql2'
+end
+
 group :test do
 # Use rspec for testing
   gem 'rspec', '~> 2.14.1'
+end
+
+group :production, :staging do
+  gem 'rails_12factor'
+  gem 'pg'
 end
